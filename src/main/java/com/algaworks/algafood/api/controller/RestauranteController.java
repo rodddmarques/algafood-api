@@ -37,6 +37,7 @@ public class RestauranteController {
 	
 	@GetMapping
 	public ResponseEntity<List<Restaurante>> listar() {
+		
 		return ResponseEntity.ok(restauranteRepository.findAll());
 	}
 	
